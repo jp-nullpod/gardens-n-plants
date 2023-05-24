@@ -1,6 +1,10 @@
-<p style="color: green"><%= notice %></p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= @garden.banner_url %>');">
+  <div class="container">
+    <h1><%= @garden.name %></h1>
+  </div>
+</div>
 
-<%= render @garden %>
+
 
 <div>
   <%= link_to "Edit this garden", edit_garden_path(@garden) %> |
